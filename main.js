@@ -21,4 +21,20 @@ myFile.addEventListener('change', (e) => {
   // Latest Date
   const latestDate = document.querySelector('#latestDate');
   latestDate.innerHTML = file.lastModifiedDate;
+
+  // FileReader オブジェクト
+  const reader = new FileReader();
+
+  // 読み込みが完了したら画像を表示
+  reader.addEventListener('load', () => {
+    const preview = document.querySelector('#preview img');
+    console.log(preview);
+    // => <img src="data:image/png;base64,...">
+
+    preview.src = reader.result;
+  }, false);
+
+  // DataURL形式の文字列に変換
+  reader.readAsDataURL(file);
+
 }, false);
