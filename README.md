@@ -3,7 +3,7 @@
 # File API
 JavaScriptによって、Webページからユーザーの環境下のファイルを要求し、その内容を読み込む。<br>
 ファイルの選択はHTMLのinputタグ、もしくはドラッグ&ドロップで実行する。<br>
-<br>
+Link: 
 <a href="https://developer.mozilla.org/ja/docs/Web/API/File/Using_files_from_web_applications" target="_blank" rel="noopener">MDN web docs</a>
 
 ## Fileオブジェクトの取得
@@ -117,4 +117,5 @@ myFile.addEventListener('change', (e) => {
 
 ### Base64
 バイナリーからテキストへの符号化を行う手法のグループであり、64 を基数とする表現に変換することで、バイナリーデータを ASCII 文字列で表す。<br>
+Link: 
 <a href="https://developer.mozilla.org/ja/docs/Web/API/WindowBase64/Base64_encoding_and_decoding" target="_blank" rel="noopener">MDN web docs</a>
